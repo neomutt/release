@@ -63,7 +63,7 @@ git am ../patch-sets/features-extra/*
 git tag features-extra
 git am ../patch-sets/bugs-neomutt/*
 git tag bugs-neomutt
-git branch feature/bug-fixes
+git branch feature/bug-fixes HEAD^
 
 git checkout -b arch bugs-neomutt
 
@@ -80,7 +80,7 @@ git am ../patch-sets/copr/*
 
 git checkout -b gentoo bugs-neomutt
 git am ../patch-sets/gentoo-pre/*
-git tag gentoo-pre
+git branch gentoo-pre
 git am ../patch-sets/gentoo/*
 
 git checkout neomutt
